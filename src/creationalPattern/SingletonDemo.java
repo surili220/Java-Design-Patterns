@@ -9,7 +9,8 @@ public class SingletonDemo {
 		
 	}
 	
-	public static SingletonDemo getInstance() {
+	// synchronized is used to make the Singleton thread safe.
+	public static synchronized SingletonDemo getInstance() {
 		if(instance ==null) { // create instance only if its null . 
 			instance = new SingletonDemo(); // lazy initialization
 			
