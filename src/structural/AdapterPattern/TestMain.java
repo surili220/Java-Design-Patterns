@@ -1,11 +1,15 @@
 package structural.AdapterPattern;
 
+import java.util.HashMap;
+
 public class TestMain {
 
 	public static void main(String[] args) {
 		WeatherUI ui = new WeatherUI();
 		ui.getTemp(12345);
 		ui.getTemp(1234);
+		
+		
 	}
 }
 //adapter pattern is a bridge between two incompatible interfaces
